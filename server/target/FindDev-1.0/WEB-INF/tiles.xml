@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value = "" />
+        <put-attribute name="header" value = "/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value = "" />
+        <put-attribute name="footer" value = "/WEB-INF/layout/footer.jsp" /> 
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value = "Trang chủ" />
+        <put-attribute name="content" value = "/WEB-INF/views/index.jsp" />
+    </definition>
+    <definition name="detail" extends="baseLayout">
+        <put-attribute name="title" value = "Chi tiết" />
+        <put-attribute name="content" value = "/WEB-INF/views/detail.jsp" />
+    </definition>
+    <definition name="results" extends="baseLayout">
+        <put-attribute name="title" value = "Kết quả tìm kiếm" />
+        <put-attribute name="content" value = "/WEB-INF/views/results.jsp" />
+    </definition>
+        <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value = "Đăng nhập" />
+        <put-attribute name="content" value = "/WEB-INF/views/login.jsp" />
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value = "Đăng ký" />
+        <put-attribute name="content" value = "/WEB-INF/views/candidateRegisterStep1.jsp" />
+    </definition>
+    <definition name="register2" extends="baseLayout">
+        <put-attribute name="title" value = "Đăng ký" />
+        <put-attribute name="content" value = "/WEB-INF/views/candidateRegisterStep2.jsp" />
+    </definition>
+</tiles-definitions>
+
+
+
